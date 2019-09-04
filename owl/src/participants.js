@@ -2,6 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 // import STORE from './STORE'
 import RenderParticipants from './render-participants';
+import './participants.css'
 
 
 function Participant(props){

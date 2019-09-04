@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Participant /> renders UI as expected 1`] = `
+<div
+  className="participant-list"
+>
+  <li>
+    <img
+      alt="avatar"
+    />
+    <h3>
+      James
+    </h3>
+    <p>
+      in-session
+    </p>
+    <p>
+      
+    </p>
+  </li>
+  <li>
+    <img
+      alt="avatar"
+    />
+    <h3>
+      Preet
+    </h3>
+    <p>
+      in-session
+    </p>
+    <p>
+      on-stage
+    </p>
+  </li>
+</div>
+`;

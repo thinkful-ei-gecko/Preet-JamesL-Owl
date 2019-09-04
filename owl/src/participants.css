@@ -1,0 +1,25 @@
+div {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid grey;
+    width: 20%;
+    top: 0;
+    padding: 0;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+div li img {
+    padding-right: 2em;
+    margin-bottom:10px;;
+    max-width: 64px;
+}
+
+div li {
+    padding-top: 1em;
+    margin-left: 1em;
+}
+
+
+
