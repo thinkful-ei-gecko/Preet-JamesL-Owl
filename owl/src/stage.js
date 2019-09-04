@@ -1,19 +1,26 @@
 import React from 'react';
-import './styles/stage.css'
+import RenderParticipants from './render-participants';
 
 
 function Stage(props){
-    if(props.onStage)
+    // let participantOnStage = props.store.map(person => person.onStage ?
+    //     <div className="stage" key={person.id}>
+    //     <h3>name={person.name}</h3>
+    //     <img src={person.avatar} alt="avatar"></img>
+    //     </div>: " ");
+    let participantOnStage = props.store.map(person =>
+        <RenderParticipants 
+            key = {person.id}
+            person ={person.avatar}
+            name={person.name}
+            inSession={person.inSession}
+            onStage={person.onStage} />
+        )
     return(
-        <div class="main-container">
-            <div class="name-container">
-                <h3>{props.name}</h3>
-            </div>
-            <div class="avatar-container">
-                <img src={props.avatar} alt="avatar"></img>
-            </div>
+        <div className="main-container">
+            {participantOnStage}
         </div>
     )
 }
 
-export default Stage
+export default Stage;
