@@ -2,7 +2,7 @@ import React from 'react';
 //import ReactDOM from 'react-dom';
 
 
-function renderParticipants(props){
+function RenderParticipants(props){
     return (
         <li key={props.id}>
             <img src={props.avatar}></img>
@@ -13,4 +13,4 @@ function renderParticipants(props){
     )
 }
 
-export default renderParticipants;
+export default RenderParticipants;
